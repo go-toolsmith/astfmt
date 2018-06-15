@@ -15,7 +15,7 @@ go get github.com/go-toolsmith/astfmt
 ## Example
 
 ```go
-package astfmt_test
+package main
 
 import (
 	"go/token"
