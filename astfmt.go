@@ -26,6 +26,14 @@ func Fprintf(w io.Writer, format string, args ...interface{}) error {
 	return defaultPrinter.Fprintf(w, format, args...)
 }
 
+// Sprintf calls fmt.Sprintf with additional support of %s format
+// for ast.Node arguments.
+//
+// Uses empty file set for AST printing.
+func Sprintf(format string, args ...interface{}) string {
+	return defaultPrinter.Sprintf(format, args...)
+}
+
 // NewPrinter returns printer that uses bound file set when printing AST nodes.
 func NewPrinter(fset *token.FileSet) *Printer {
 	return &Printer{fset: fset}
@@ -48,6 +56,11 @@ func (p *Printer) Println(args ...interface{}) error {
 func (p *Printer) Fprintf(w io.Writer, format string, args ...interface{}) error {
 	_, err := fmt.Fprintf(w, format, wrapArgs(p.fset, args)...)
 	return err
+}
+
+// Sprintf printer method is like Sprintf function, but uses bound file set when printing.
+func (p *Printer) Sprintf(format string, args ...interface{}) string {
+	return fmt.Sprintf(format, wrapArgs(p.fset, args)...)
 }
 
 // defaultPrinter is used in printing functions like Println.
