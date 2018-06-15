@@ -73,7 +73,7 @@ type fmtNode struct {
 func (n fmtNode) String() string {
 	var buf bytes.Buffer
 	if err := printer.Fprint(&buf, n.fset, n.node); err != nil {
-		return fmt.Sprintf("%%!(%s)", err)
+		return fmt.Sprintf("%%!s(ast.Node=%s)", err)
 	}
 	return buf.String()
 }
