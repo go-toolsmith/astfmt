@@ -1,4 +1,4 @@
-// Package astfmt implements ast.Node formatting with fmt-like API.
+// Package astfmt implements `ast.Node` formatting with fmt-like API.
 package astfmt
 
 import (
