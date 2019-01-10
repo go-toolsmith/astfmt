@@ -1,6 +1,6 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/go-toolsmith/strparse)](https://goreportcard.com/report/github.com/go-toolsmith/strparse)
-[![GoDoc](https://godoc.org/github.com/go-toolsmith/strparse?status.svg)](https://godoc.org/github.com/go-toolsmith/strparse)
-[![Build Status](https://travis-ci.org/go-toolsmith/strparse.svg?branch=master)](https://travis-ci.org/go-toolsmith/strparse)
+[![Go Report Card](https://goreportcard.com/badge/github.com/go-toolsmith/astfmt)](https://goreportcard.com/report/github.com/go-toolsmith/astfmt)
+[![GoDoc](https://godoc.org/github.com/go-toolsmith/astfmt?status.svg)](https://godoc.org/github.com/go-toolsmith/astfmt)
+[![Build Status](https://travis-ci.org/go-toolsmith/astfmt.svg?branch=master)](https://travis-ci.org/go-toolsmith/astfmt)
 
 # astfmt
 
