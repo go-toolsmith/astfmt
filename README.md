@@ -3,10 +3,9 @@
 [![build-img]][build-url]
 [![pkg-img]][pkg-url]
 [![reportcard-img]][reportcard-url]
-[![coverage-img]][coverage-url]
 [![version-img]][version-url]
 
-Package astfmt implements ast.Node formatting with fmt-like API.
+Package `astfmt` implements ast.Node formatting with fmt-like API.
 
 ## Installation
 
@@ -52,7 +51,5 @@ func Example() {
 [pkg-url]: https://pkg.go.dev/github.com/go-toolsmith/astfmt
 [reportcard-img]: https://goreportcard.com/badge/go-toolsmith/astfmt
 [reportcard-url]: https://goreportcard.com/report/go-toolsmith/astfmt
-[coverage-img]: https://codecov.io/gh/go-toolsmith/astfmt/branch/main/graph/badge.svg
-[coverage-url]: https://codecov.io/gh/go-toolsmith/astfmt
 [version-img]: https://img.shields.io/github/v/release/go-toolsmith/astfmt
 [version-url]: https://github.com/go-toolsmith/astfmt/releases
